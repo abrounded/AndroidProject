@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/buttonViewstudent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonaddstudent"
+
+        android:layout_marginTop="18dp"
+        android:text="View student"
+        android:textColor="#03A9F4" />
+
+    <Button
+        android:id="@+id/buttonlogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonviewfaculty"
+        android:layout_alignParentEnd="true"
+
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="-10dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="10dp"
+        android:text="Logout"
+        android:textColor="#E91E63" />
+
+    <Button
+        android:id="@+id/buttonviewfaculty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonlogout"
+        android:layout_alignLeft="@+id/buttonaddfaculty"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="117dp"
+        android:text="View faculty"
+        android:textColor="#03A9F4" />
+
+    <Button
+        android:id="@+id/buttonaddfaculty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonviewfaculty"
+        android:layout_alignLeft="@+id/buttonViewstudent"
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginEnd="-8dp"
+        android:layout_marginBottom="67dp"
+        android:text="Add faculty"
+        android:textColor="#03A9F4" />
+
+    <Button
+        android:id="@+id/buttonaddstudent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonViewstudent"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="22dp"
+
+        android:text="Add student"
+        android:textColor="#03A9F4" />
+
+    <Button
+        android:id="@+id/attendancePerStudentButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonViewstudent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+
+        android:text="Attendance Per Student"
+        android:textColor="#03A9F4" />
+
+</RelativeLayout>
