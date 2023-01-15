@@ -114,17 +114,17 @@ public class AddStudentActivity extends AppCompatActivity {
                 }
                 else {
 
-//                    StudentBean studentBean = new StudentBean();
-//
-//                    studentBean.setStudent_firstname(first_name);
-//                    studentBean.setStudent_lastname(last_name);
-//                    studentBean.setStudent_mobilenumber(phone_no);
-//                    studentBean.setStudent_address(address);
-//                    studentBean.setStudent_department(branch);
-//                    studentBean.setStudent_class(year);
-//
-//                    DBAdapter dbAdapter= new DBAdapter(AddStudentActivity.this);
-//                    dbAdapter.addStudent(studentBean);
+                    StudentBean studentBean = new StudentBean();
+
+                    studentBean.setStudent_firstname(first_name);
+                    studentBean.setStudent_lastname(last_name);
+                    studentBean.setStudent_mobilenumber(phone_no);
+                    studentBean.setStudent_address(address);
+                    studentBean.setStudent_department(branch);
+                    studentBean.setStudent_class(year);
+
+                    DBAdapter dbAdapter= new DBAdapter(AddStudentActivity.this);
+                    dbAdapter.addStudent(studentBean);
 
                     Intent intent =new Intent(AddStudentActivity.this,AdminPage.class);
                     startActivity(intent);
